@@ -5,7 +5,7 @@ PetVision is a deep learning project that utilizes a Convolutional Neural Networ
 
 ## Project Setup
 
-### Dependencies
+### Main Dependencies
 - Python 3.8+
 - TensorFlow 2.x
 - OpenCV
@@ -15,8 +15,8 @@ PetVision is a deep learning project that utilizes a Convolutional Neural Networ
 ### Installation
 Clone this repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/PetVision.git
-cd PetVision
+git clone https://github.com/muneebalichishti01/PetVision-Detector
+cd PetVision-Detector
 ```
 
 Install the required packages:
@@ -27,12 +27,13 @@ pip install -r requirements.txt
 ### Usage
 To train the model from scratch, run:
 ```bash
-python train.py
+python convolutional_neural_network.py
 ```
 
-For predicting new images:
+## Using the already trained model
+The trained model is saved in the `model` directory. To use the trained model for predictions, run the following command:
 ```bash
-python predict.py --image_path 'path/to/your/image.jpg'
+python "Predict using trained model.py"
 ```
 
 ### Model Architecture
@@ -61,4 +62,4 @@ Possible extensions or improvements to the project, such as implementing additio
 This project is open source and available under the [MIT License](LICENSE.md).
 
 ## Acknowledgments
-Credit any third-party assets or other resources you utilized during the project.
+Dataset used in this project is from the Deep Learning A-Z 2024, Udemy Course and can be [downloaded here](https://drive.google.com/file/d/1zQNdD19TKTu3szlSlFKI6ou1uQFuZNkt/view?usp=sharing).

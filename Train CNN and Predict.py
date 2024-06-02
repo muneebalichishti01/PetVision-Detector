@@ -1,6 +1,8 @@
 # PetVision Detector:
 
 # Convolutional Neural Network
+# Training the CNN on the Training set and evaluating it on the Test set
+# Saving and then loading the model
 
 # Importing the libraries
 import tensorflow as tf
@@ -119,7 +121,6 @@ test_image = image.load_img(path, target_size = (128, 128))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image, axis = 0)
 result = cnn.predict(test_image/255.0)
-training_set.class_indices
 if result[0][0] > 0.5:
   prediction = 'dog'
 else:
